@@ -2,14 +2,14 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { EllipsisVerticalIcon } from '@heroicons/react/20/solid'
 import { Link, useLocation, useNavigate } from "react-router-dom"
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { useQuery } from '@tanstack/react-query'
 //import { useQuery } from '@tanstack/react-query'
 //import { getProjects } from "@/api/ProjectAPI"
 import { useAuth } from '@/hooks/useAuth'
-import { toast } from "react-toastify"
+//import { toast } from "react-toastify"
 //import { isManager } from '@/utils/policies'
 //import DeleteProjectModal from '@/components/projects/DeleteProjectModal'
-import { deleteProject, getProjects } from "@/api/ProjectAPI"
+import { getProjects } from "@/api/ProjectAPI"
 import { isManager } from '@/utils/policies'
 import DeleteProjectModal from '@/components/projects/DeleteProjectModal'
 
@@ -49,7 +49,7 @@ export default function DashboardView() {
 
   */
 
-  
+
   //console.log('isLoading: ', isLoading)
   console.log("data dashboard:", data)
   //console.log(data)
