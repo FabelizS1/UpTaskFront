@@ -22,7 +22,7 @@ export default function DashboardView() {
   
   const navigate = useNavigate()
 
-  const queryClient = useQueryClient()
+  //const queryClient = useQueryClient()
 
   const { data: user, isLoading: authLoading } = useAuth()  // Aqui se usa data: user donde user es un alias de data porque tiene el mismo nombre de abajo, isLoading: authLoading es el loading con el alias de authLoading
 

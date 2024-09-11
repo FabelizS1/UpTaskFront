@@ -12,7 +12,7 @@ export default function ChangePasswordView() {
     password_confirmation: ''
   }
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm({ defaultValues: initialValues })
+  const { register, handleSubmit,  formState: { errors } } = useForm({ defaultValues: initialValues })
 
   const { mutate } = useMutation({
       mutationFn: changePassword,
@@ -20,7 +20,7 @@ export default function ChangePasswordView() {
       onSuccess: (data)  => toast.success(data)
   })
 
-  const password = watch('password'); // Con esto se valida que ambos password sean iguales
+  //const password = watch('password'); // Con esto se valida que ambos password sean iguales
 
   const handleChangePassword = (formData : UpdateCurrentUserPasswordForm) => {
 
