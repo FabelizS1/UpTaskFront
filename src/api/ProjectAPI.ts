@@ -19,7 +19,7 @@ export async function createProject(formData: ProjectFormData) {
 }
 
 export async function getProjects() {
-    const token = localStorage.getItem('AUTH_TOKEN')
+    //const token = localStorage.getItem('AUTH_TOKEN')
 
     console.log("Entro al metodo!")
     try {

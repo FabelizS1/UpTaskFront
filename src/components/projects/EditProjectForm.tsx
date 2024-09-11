@@ -1,6 +1,6 @@
 import ProjectForm from './ProjectForm'
 import { Link, useNavigate } from 'react-router-dom'
-import { Project, ProjectFormData } from '@/types/index'
+import { ProjectFormData } from '@/types/index'
 import { useForm } from 'react-hook-form'
 import { useMutation, useQueryClient } from '@tanstack/react-query' // useQueryClient puede ejecutar la que reinicia o invalida los datos previos
 import { updateProject } from '@/api/ProjectAPI'

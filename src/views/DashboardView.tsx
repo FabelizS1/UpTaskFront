@@ -27,14 +27,14 @@ export default function DashboardView() {
   const { data: user, isLoading: authLoading } = useAuth()  // Aqui se usa data: user donde user es un alias de data porque tiene el mismo nombre de abajo, isLoading: authLoading es el loading con el alias de authLoading
 
   
-  const { data, isError, isLoading } = useQuery({  // Aqui se le pasa la opcion de data, el isLoading si se le va a agregar un spinner o un isError
+  const { data, isLoading } = useQuery({  // Aqui se le pasa la opcion de data, el isLoading si se le va a agregar un spinner o un isError
     queryKey: ['projects'],
     queryFn: getProjects
   })
 
 
 
-
+/*
   const {mutate} = useMutation({
     mutationFn: deleteProject,
     onError: (error) => {
@@ -47,6 +47,9 @@ export default function DashboardView() {
     }
   })
 
+  */
+
+  
   //console.log('isLoading: ', isLoading)
   console.log("data dashboard:", data)
   //console.log(data)
